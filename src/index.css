@@ -1,0 +1,31 @@
+/* Using Tailwind via CDN */
+
+body {
+  background-color: #08080b; /* Even darker than gray-900 */
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Code Pro', 'Courier New', monospace;
+}
+
+/* Remove harsh focus rings and replace with subtle glow */
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Override Tailwind's focus ring utilities */
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Remove number input arrows/spinners */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
